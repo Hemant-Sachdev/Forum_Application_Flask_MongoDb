@@ -2,7 +2,7 @@ from flask import Flask, render_template, redirect, session
 from functools import wraps
 import pymongo
 app = Flask(__name__)
-app.secret_key = b'x&O\xdb\xac\x96x\xe9<,\xa8\x81\xe739@'
+app.secret_key = 'add_your_unique_key_here'
 # Database
 client = pymongo.MongoClient('localhost', 27017)
 db = client.user_login_system
